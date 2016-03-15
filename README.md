@@ -18,6 +18,7 @@
 
 
 Issues:
+
 Cloning doesn't work if QA_Exercise isn't on C. Don't leave it in the downloads folder!
 
 Tortoise commands will abort if a username hasn't been set.
