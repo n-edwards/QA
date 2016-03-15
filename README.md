@@ -9,19 +9,27 @@
 
 8. Log should be created at C:\QA_Exercise\Root\CIS\output1.txt  (Best viewed with Notepad++ (http://notepad-plus-plus.org/download))
 9. Most errors should be triggered by running Root's CIS.bat again. 
+10. 
    Other errors require a new commit in Root, to make sure they are triggered in the clone:
+
      a. To test compilation failure, uncomment the check for SuccessfulBuild.txt. Run "hg commit -m "test"" command in Root. CIS.bat.
+     
      b. To trigger error for missing compiler: Once you have a Root_Clone, change name of its Compile.bat. Run Root CIS.bat and skip past the clone failure (since you already have one).
 
 
 Issues:
 Cloning doesn't work if QA_Exercise isn't on C. Don't leave it in the downloads folder!
+
 Tortoise commands will abort if a username hasn't been set.
   If notepad is not recognized on the command line, make sure your system environment variable PATH contains C:\Windows\System32;
 If other Tortoise issues are encountered, try deleting the .hg folder, and reinitializing with commands in Root:
+
   hg init to create repository.
+  
   hg add (adds everything to .hg tracking).
+  
   hg commit (creates a note for initial commit).
+  
 Reboot after Tortoise install may be necessary, although this didn't seem to be the case in tests.
 
 To reset the exercise after running CIS:
@@ -31,11 +39,18 @@ Delete Root_Clone.
 
 ---
 References: 
+
   http://hgbook.red-bean.com/
+  
   http://mercurial.selenic.com/guide
+  
   http://mercurial.selenic.com/wiki
+  
   http://www.selenic.com/mercurial/hg.1.html
+  
   http://stackoverflow.com/
+  
   http://www.robvanderwoude.com/batchfiles.php
+  
   http://ss64.com/
 
