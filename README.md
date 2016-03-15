@@ -1,3 +1,6 @@
+Simple example of a basic continuous integration system.
+
+
 1. Download and install Mercurial TortoiseHG.    http://mercurial.selenic.com/
    Open a command prompt, run command "hg config --edit" and enter your username. Save and close.
 2. Copy QA_Exercise directory to C Drive. Inside is a Mercurial repository, Root, indicated by the .hg directory within.
